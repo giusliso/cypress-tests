@@ -1,0 +1,29 @@
+{
+  "name": "cypress-tests",
+  "version": "1.0.0",
+  "description": "automated-software-testing",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giusliso/cypress-tests.git"
+  },
+  "keywords": [
+    "testing",
+    "cypress",
+    "automation"
+  ],
+  "author": "Giuseppe Liso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giusliso/cypress-tests/issues"
+  },
+  "homepage": "https://github.com/giusliso/cypress-tests#readme",
+  "dependencies": {
+    "cypress": "^4.5.0",
+    "prettier": "^2.0.5"
+  }
+}
