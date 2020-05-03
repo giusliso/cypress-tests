@@ -1,14 +1,21 @@
 describe('My first test', () => {
-    it('true should be true', () => {
-        expect(true).to.equal(false)
+    it('Should load correct url', () => {
+        cy.visit('http://example.com/', {timeout: 100000})
     })
-    it('2 + 2 should be 4', () => {
-        expect(4).to.equal(2+2)
+    it('Should check correct url', () => {
+        cy.url().should('contain','example')
     })
-})
 
-describe('Another description for test', () => {
-    it('1 + 2 should be 3', () => {
-        expect(3).to.equal(1+2)
+    it('Should wait for 3 seconds', () => {
+        cy.wait(3000)
+    })
+
+    it('Should pause execution', () => {
+        cy.pause()
+    })
+
+    it('Should check for correct elements on the page', () => {
+        cy.get('h1').should('be.visible')
+        cy.get('h1').should('contain.text','Example')
     })
 })
